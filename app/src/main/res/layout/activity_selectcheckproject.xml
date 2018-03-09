@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#F3F4F8"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/printLabel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2878FF"
+            android:textColor="#FFFFFF"
+            android:text="打印标签"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/homerange_shape"
+            android:orientation="vertical"
+            android:layout_margin="9dp"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/printLabel"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="5dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="#2878FF" />
+
+                <TextView
+                    android:id="@+id/checkProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@id/view"
+                    android:gravity="center"
+                    android:text="耐高温检测项目"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/checkRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="87dp">
+
+                 <RelativeLayout
+                     android:id="@+id/StrongDescrp"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:clickable="true"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:gravity="center">
+
+                     <ImageView
+                         android:id="@+id/StrongDescrp_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+
+                     <ImageView
+                         android:id="@+id/iv1"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="27dp"
+                         android:src="@mipmap/time" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv1"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="抗拉强度"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:id="@+id/reverseExperment"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_weight="1"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:clickable="true"
+                     android:gravity="center">
+                     <ImageView
+                         android:id="@+id/reverseExperment_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+                     <ImageView
+                         android:id="@+id/iv2"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_marginTop="27dp"
+                         android:layout_centerInParent="true"
+                         android:src="@mipmap/clock" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv2"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="扭转实验"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:id="@+id/brokeRate"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_weight="1"
+                     android:clickable="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:id="@+id/brokeRate_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+                     <ImageView
+                         android:id="@+id/iv3"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="27dp"
+                         android:src="@mipmap/clock" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv3"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="断裂伸长率"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="9dp"
+                 android:layout_height="87dp">
+
+                 <RelativeLayout
+                     android:id="@+id/resistanceRate"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_weight="1"
+                     android:clickable="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:id="@+id/resistanceRate_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+                     <ImageView
+                         android:id="@+id/iv4"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="27dp"
+                         android:src="@mipmap/time" />
+
+                     <TextView
+
+                         android:id="@+id/textView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv4"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="电阻率"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:id="@+id/straightResistance"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_weight="1"
+                     android:clickable="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:id="@+id/straightResistance_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+                     <ImageView
+                         android:id="@+id/iv5"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="27dp"
+                         android:src="@mipmap/clock" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv5"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="直流电阻"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:id="@+id/straightResistance"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_weight="1"
+                     android:clickable="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:id="@+id/straightResistance_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+                     <ImageView
+                         android:id="@+id/iv5"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="27dp"
+                         android:src="@mipmap/clock" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv5"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="直流电阻"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="9dp"
+                 android:layout_height="87dp">
+
+                 <RelativeLayout
+                     android:id="@+id/resistanceRate"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_weight="1"
+                     android:clickable="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:id="@+id/resistanceRate_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+                     <ImageView
+                         android:id="@+id/iv4"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="27dp"
+                         android:src="@mipmap/time" />
+
+                     <TextView
+
+                         android:id="@+id/textView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv4"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="电阻率"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:id="@+id/straightResistance"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_weight="1"
+                     android:clickable="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:id="@+id/straightResistance_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+                     <ImageView
+                         android:id="@+id/iv5"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="27dp"
+                         android:src="@mipmap/clock" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv5"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="直流电阻"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+
+                 <RelativeLayout
+                     android:id="@+id/straightResistance"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/checrange_shape"
+                     android:layout_weight="1"
+                     android:clickable="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:id="@+id/straightResistance_image"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@mipmap/ic_launcher"
+                         />
+                     <ImageView
+                         android:id="@+id/iv5"
+                         android:layout_width="24dp"
+                         android:layout_height="23dp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="27dp"
+                         android:src="@mipmap/clock" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_below="@id/iv5"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="11dp"
+                         android:text="直流电阻"
+                         android:textSize="15sp" />
+                 </RelativeLayout>
+             </LinearLayout>-->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

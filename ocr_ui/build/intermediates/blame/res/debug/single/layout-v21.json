@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Androidstudio_WorkSpace\\InteliBuild\\ocr_ui\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\bibinet\\.android\\build-cache\\2c40e1c8c12b1960d25111e338efc859ff7c47eb\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Androidstudio_WorkSpace\\InteliBuild\\ocr_ui\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\bibinet\\.android\\build-cache\\2c40e1c8c12b1960d25111e338efc859ff7c47eb\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Androidstudio_WorkSpace\\InteliBuild\\ocr_ui\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\bibinet\\.android\\build-cache\\2c40e1c8c12b1960d25111e338efc859ff7c47eb\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Androidstudio_WorkSpace\\InteliBuild\\ocr_ui\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\bibinet\\.android\\build-cache\\2c40e1c8c12b1960d25111e338efc859ff7c47eb\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

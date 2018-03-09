@@ -1,0 +1,1 @@
+package com.bibinet.intelibuild.project.utils.ocrStrategy;/** * Created by bibinet on 2018-2-2. */public interface OcrIndentifyResultStrategy {    double getOcrCorrectResult(String string);}

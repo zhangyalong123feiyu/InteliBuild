@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="63dp"
+    android:layout_marginTop="80dp"
+    android:layout_gravity="center_horizontal">
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/chatou"/>
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/iv1"
+        android:src="@mipmap/connect"/>
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iv2"
+        android:layout_marginLeft="25dp"
+        android:src="@mipmap/dianqi"/>
+</RelativeLayout>
+    <TextView
+        android:id="@+id/sureDeviceConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已连接"
+        android:layout_marginTop="47dp"
+        android:textColor="#2DC36F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:text="请检查您的PDA与设备是否连接,连接成功后请勿拔动数据线,以免数据传输不稳定。"
+        android:layout_marginTop="43dp"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        />
+</LinearLayout>

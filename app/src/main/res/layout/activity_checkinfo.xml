@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp">
+
+        <cn.bingoogolapple.qrcode.zbar.ZBarView
+            android:id="@+id/scanView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:qrcv_animTime="1000"
+            app:qrcv_borderColor="@android:color/white"
+            app:qrcv_borderSize="1dp"
+            app:qrcv_customGridScanLineDrawable="@mipmap/custom_grid_scan_line"
+            app:qrcv_cornerColor="@color/colorPrimaryDark"
+            app:qrcv_cornerLength="20dp"
+            app:qrcv_cornerSize="3dp"
+            app:qrcv_isShowDefaultScanLineDrawable="true"
+            app:qrcv_rectWidth="200dp"
+            app:qrcv_barcodeRectHeight="200dp"
+            app:qrcv_scanLineColor="@color/colorPrimaryDark"
+            app:qrcv_topOffset="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/light"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"/>
+    </RelativeLayout>
+
+    <TextView
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:gravity="center"
+       android:layout_marginTop="30dp"
+       android:text="对准二维码扫描即可"/>
+</LinearLayout>

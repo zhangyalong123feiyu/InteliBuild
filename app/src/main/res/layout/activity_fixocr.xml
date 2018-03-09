@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_margin="9dp"
+        android:background="@drawable/homerange_shape">
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="122dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rectangle_shape">
+            <EditText
+                android:id="@+id/ocrResult"
+                android:layout_width="wrap_content"
+                android:minWidth="80dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@id/relativeLayout"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            app:np_textColor="#999999"
+            app:np_selectedTextColor="#333333"
+            app:np_selectedTextSize="16sp"
+            app:np_textSize="12sp"
+            app:np_dividerDistance="20dp"
+            app:np_wrapSelectorWheel="false"
+            app:np_value="1"
+            app:np_min="0"
+            app:np_dividerThickness="0.5dp"
+            app:np_max="2"
+            android:background="#E3E3E3"
+            android:layout_marginRight="7dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_margin="9dp"
+        android:background="@drawable/homerange_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="5dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="#2878FF" />
+
+            <TextView
+                android:id="@+id/checkdProductData"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@id/view"
+                android:gravity="center"
+                android:text="检测数据"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="标准要求"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/doStandard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="G__GY__LL"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="检测值"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/checkData"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="checkData"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/checkResultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="检测结果"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/CheckResult"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="合格"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:layout_marginLeft="9dp"
+    android:layout_marginRight="9dp"
+    android:background="@drawable/homerange_shape"
+    >
+    <EditText
+        android:id="@+id/fixResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入修改原因"
+        android:textSize="14sp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="11dp"
+        android:maxLength="300"
+        android:background="@null"/>
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="可输入"/>
+        <TextView
+            android:id="@+id/lastText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="300"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="字"/>
+    </LinearLayout>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_margin="9dp"
+        android:background="@drawable/homerange_shape">
+
+        <ImageView
+            android:id="@+id/ocrPic"
+            android:layout_width="104dp"
+            android:layout_height="54dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:text="123" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@id/ocrPic"
+            android:text="点击看大图" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/postData"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="提交"
+            android:textColor="#FFFFFF"
+            android:background="#2878FF"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/backMain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="返回" />
+    </LinearLayout>
+</LinearLayout>

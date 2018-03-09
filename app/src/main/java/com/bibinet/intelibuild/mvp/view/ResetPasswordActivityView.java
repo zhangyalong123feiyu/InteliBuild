@@ -1,0 +1,1 @@
+package com.bibinet.intelibuild.mvp.view;/** * Created by bibinet on 2018-1-5. */public interface ResetPasswordActivityView {    void onResetPasswordSucess();    void onResetPasswordFailed(String msg);}

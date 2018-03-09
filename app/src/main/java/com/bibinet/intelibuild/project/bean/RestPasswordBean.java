@@ -1,0 +1,1 @@
+package com.bibinet.intelibuild.project.bean;import java.io.Serializable;/** * Created by bibinet on 2018-1-5. */public class RestPasswordBean implements Serializable{}
